@@ -4,7 +4,7 @@
  * @Author: TianyuYuan
  * @Date: 2021-10-22 00:09:07
  * @LastEditors: TianyuYuan
- * @LastEditTime: 2021-10-23 16:28:03
+ * @LastEditTime: 2021-10-23 16:32:14
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,24 @@
     <div class="greeting">你好, 我叫天宇</div>
     <div class="greeting" id="hi">👋</div>
   </div>
-  <%- include('icon_link') %>
+
+  <div class="contact-icon mt-3 d-flex">
+    <div class="icon-link">
+      <a href="https://github.com/paperplane110" target="_blank">
+        <img src="public/icons/github.png" alt="git-icon" width="33px" height="33px">
+      </a>
+    </div> 
+    <div class="icon-link">
+      <a href="https://500px.com.cn/paperplane110" target="_blank">
+        <img src="public/icons/picasa.png" alt="ins-icon" width="32px" height="32px">
+      </a>
+    </div> 
+    <div class="icon-link">
+      <a href="mailto:tim3-yuan@foxmail.com" target="_blank">
+        <img src="public/icons/email.png" alt="ins-icon" width="33px" height="33px">
+      </a>
+    </div> 
+  </div>
 
   <hr>
 
@@ -120,7 +137,9 @@
   <!--  <div class="mt-5" id="experience">-->
   <!--    <h4 class="secondary-title">My Experience</h4>-->
   <!--  </div>-->
-  <%- include('footer') %>
+  <footer class="mt-5" id="sticky-footer">
+    <small> @2021 paperplane110</small>
+  </footer>
 </div>
 </body>
 </html>
