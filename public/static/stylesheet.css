@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+#main {
+  width: 780px;
+}
+
+.greeting {
+  font-family: Rubik, sans-serif;
+  font-size: 3rem;
+}
+
+#hi {
+  width: 60px;
+  animation-name: hello;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes hello {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+#hi:hover {
+  animation-name: hello;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.secondary-title {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+a.badge {
+  text-decoration: none;
+}
+
+a.badge:hover {
+  color: white;
+}
+
+.icon-link {
+  height: 60px;
+  width: 60px;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow .15s ease-in-out;
+}
+
+.icon-link:hover {
+  /* x-offset y-offset blur-radius color*/
+  box-shadow: 0 0 10px rgba(0,0,0,0.19)
+}
+
+.project-card {
+  border-radius: 30px;
+  transition: box-shadow .15s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.19)
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.project-description {
+  padding-left: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  min-height: 800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "first first second"
+    "first first third"
+    "forth fifth fifth"
+    "forth fifth fifth";
+}
+
+#grid1 {
+  grid-area: first;
+}
+
+#grid2 {
+  grid-area: second;
+}
+
+#grid3 {
+  grid-area: third;
+}
+
+#grid4 {
+  grid-area: forth;
+}
+
+#grid5 {
+  grid-area: fifth;
+}
+
+#pic1 {
+  background-image: url('../gallery/spring.png');
+}
+
+#pic2 {
+  background-image: url('../gallery/link.jpeg');
+}
+
+#pic3 {
+  background-image: url('../gallery/plane.jpeg');
+}
+
+#pic4 {
+  background-image: url('../gallery/flower.jpg');
+}
+
+#pic5 {
+  background-image: url('../gallery/cathedral-bw.jpeg');
+}
+
+.gallery-grid {
+  width: 100%;
+  /* min-width: 200px;  */
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.child-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.gallery-grid:hover .child-pic {
+  transform: scale(1.2);
+}
+
